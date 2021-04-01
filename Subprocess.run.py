@@ -1,21 +1,22 @@
+#import subprocess module
 import subprocess
 
-# Exercise 2: ls
+#ls bash command
 subprocess.run(["ls"])
 
-# Exercise 3: ls with one argument
+#ls with one argument
 subprocess.run(["ls","-l"])
 
-# Exercise 4: ls with multiple arguments
+#ls with multiple arguments
 subprocess.run(["ls","-l","solution"])
 
-# Exercise 5: System Information
+#System Information
 command = "uname"
 commandArgument = "-a"
 print(f'Gathering system information with command: {command} {commandArgument}')
 subprocess.run([command,commandArgument])
 
-# Excercise #6: Diskspace Information
+#Diskspace Information
 command = "ps"
 commandArgument = "-x"
 print(f'Gathering active process information with command: {command} {commandArgument}')
